@@ -1,10 +1,10 @@
 # hAndIman
 An AI-powered home maintenance and repair interface
-
+Diagnostic tool for troubleshooting causes for home issues
 
 To Do:
-[ ] Get some user manuals or how-to guides
-[ ] Figure out which model to build
+[x] Get some user manuals or how-to guides
+[ ] Figure out which model to builds
 [ ] Figure out database
 [ ] Sketch interface
 [ ] Sketch out user profiles
