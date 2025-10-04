@@ -1,0 +1,79 @@
+{
+  "problem": "window won't open",
+  "hypotheses": [
+    {
+      "name": "Paint-sealed sash",
+      "description": "Paint or caulk has sealed sash to frame.",
+      "tests": [
+        {
+          "question": "Run a thin blade along sash edges \u2014 does it lift free easily?",
+          "expected_outcome": "no",
+          "supports": [
+            "Paint-sealed sash"
+          ],
+          "falsifies": [
+            "Warped wood",
+            "Broken sash cord",
+            "Debris obstruction"
+          ],
+          "severity": 0.9
+        }
+      ],
+      "fix": "Score paint seal with utility knife; gently free sash along edges."
+    },
+    {
+      "name": "Warped or swollen wood",
+      "description": "Wooden sash expanded due to humidity or heat.",
+      "tests": [
+        {
+          "question": "After freeing edges, does window move but scrape heavily?",
+          "expected_outcome": "yes",
+          "supports": [
+            "Warped or swollen wood"
+          ],
+          "falsifies": [
+            "Paint-sealed sash",
+            "Broken sash cord"
+          ],
+          "severity": 0.8
+        }
+      ],
+      "fix": "Sand binding surfaces and repaint; manage indoor humidity."
+    },
+    {
+      "name": "Broken sash cord or spring balance",
+      "description": "Counterweight mechanism disconnected or failed.",
+      "tests": [
+        {
+          "question": "Does the sash drop when released, as if no support?",
+          "expected_outcome": "yes",
+          "supports": [
+            "Broken sash cord or spring balance"
+          ],
+          "severity": 0.9
+        }
+      ],
+      "fix": "Replace sash cord or spring balance assembly."
+    },
+    {
+      "name": "Track obstruction",
+      "description": "Debris or protruding screws block sash movement.",
+      "tests": [
+        {
+          "question": "Look along tracks \u2014 do you see dirt or screws blocking the path?",
+          "expected_outcome": "yes",
+          "supports": [
+            "Track obstruction"
+          ],
+          "severity": 0.7
+        }
+      ],
+      "fix": "Remove obstruction; clean track; ensure screws flush with frame."
+    }
+  ],
+  "safety_checks": [
+    "Do not force the sash if it resists strongly \u2014 glass may shatter.",
+    "Wear gloves when cutting paint seal.",
+    "Support sash with hand if it may fall unexpectedly."
+  ]
+}
