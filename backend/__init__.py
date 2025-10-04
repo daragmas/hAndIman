@@ -33,11 +33,43 @@ def model_status():
         "model_name": model_manager.model_name
     })
 
+
+@app.route('/api/model/query', methods=['POST'])
+def model_query():
+    try:
+        data = request.get_json()
+        
+        if not data or 'prompt' not in data:
+            return jsonify({"error": "No prompt provided"}), 400
+        
+        if model_manager.model is None:
+            return jsonify({"error": "Model not loaded"}), 503
+        
+        prompt = data['prompt']
+        max_length = data.get('max_length', 100)
+        temperature = data.get('temperature', 0.7)
+        top_p = data.get('top_p', 0.9)
+        
+        result = model_manager.predict(
+            prompt,
+            max_length=max_length,
+            temperature=temperature,
+            top_p=top_p
+        )
+        return jsonify({
+            "prompt": prompt,
+            "generated_text": result[0]['generated_text'],
+            "model": model_manager.model_name
+        })
+    
+    except Exception as e:
+        logger.error(f"Generation failed: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=8000, host='0.0.0.0')
 
-
-# handleUserInput route
 
 # Diagnostic loop
 
