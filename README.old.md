@@ -24,3 +24,4 @@ User Data:
   - [Thompson Home Inspection Guide to home maintenance](https://thompsonhomeinspection.com/wp-content/uploads/2013/11/Guide_to_Home_Maintenance1.pdf)
   - [Irvine Campus Housing Authority Generic Homeowners Manual](https://icha.uci.edu/wp-content/uploads/2025/03/Homeowners-Maintenance-Guide-2025.pdf)
   - [WikiHow: Home Repair](https://www.wikihow.com/Category:Home-Repairs)
+  - [WikiHow: Open a Stuck Window](https://www.wikihow.com/Open-a-Stuck-Window)
