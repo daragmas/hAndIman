@@ -4,7 +4,7 @@ Diagnostic tool for troubleshooting causes for home issues
 
 To Do:
 [x] Get some user manuals or how-to guides
-[ ] Figure out which model to builds
+[ ] Figure out which model to build
 [ ] Figure out database
 [ ] Sketch interface
 [ ] Sketch out user profiles
