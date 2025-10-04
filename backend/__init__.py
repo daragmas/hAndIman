@@ -10,13 +10,6 @@ app = Flask(__name__)
 
 # Configure CORS
 CORS(app, origins=["http://localhost:3000"])
-# Request models
-class TextInput(BaseModel):
-    text: str
-
-class ModelLoadRequest(BaseModel):
-    model_name: str
-    task: str = "sentiment-analysis"
 
 # Load default model on startup
 def init_model():
@@ -42,6 +35,8 @@ def model_status():
 
 if __name__ == '__main__':
     app.run(debug=True, port=8000, host='0.0.0.0')
+
+
 # handleUserInput route
 
 # Diagnostic loop
